@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  font-size: 22px;
+  font-family: Bahnschrift;
+  text-align: center; 
+  background-color: rgba(255, 200, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+  height: 60px;
+  background-color: #50c878;
+  margin-bottom: 3px;
+}
+
+a {
+  font-weight: bold;
+  background-color: #f6a21e;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50px;
+  border-top: 3px solid green;
+}
+a:hover {
+  background-color: #E55B13;
+  border-top: 3px solid #104210;
+}
+
+header {
+  background-image: url(IMG_mhw3/background1.jpg);
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#uplay {
+  font-weight: bold;
+  font-family: 'Lemon', cursive, Times New Roman;
+  font-size: 3em;
+  color: white;
+  z-index: 1;
+  border: 5px solid #ffce66;
+  padding: 25px 50px;
+  background-color: rgba(255, 160, 0, 0.3);
+}
+#uplay em{
+  font-size: .5em; 
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#logo {
+  border-top: 3px solid #ff5412;
+  margin-top: 0px;
+}
+#logo img {
+  height: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+footer {
+  font-size: 20px;
+  background-color: #9f2b00;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden{
+	display: none;
+}
+
+/*MAIN PAGE*/
+
+article {
+  text-align: center; 
+}
+
+section {
+  position: relative;
+  display: flex;
+  padding: 60px 0px;
+  flex-direction: column;
+  align-items: left;
+  text-align: justify;
+  font-size: .75em;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 2px solid #b8390e;
+}
+#box {
+  height: 40px;
+  width: 30px;
+  font-size: 40px;
+  position: absolute;
+  top: 60px;
+  left:-70px;;
+}
+
+h1 {
+  margin: 0px;
+  font-size: 2em;
+  font-family: 'Edu NSW ACT Foundation', Times New Roman;
+  color: #ff5c4d;
+}
+
+h4 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #44455b;
+  border-bottom: 1px solid black;
+}
+
+strong{
+  margin: 20px;
+  margin-left: 0px;
+}
+
+.foto img{
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+/*FOOD PAGE*/
+
+#food{
+    padding: 10px;
+    margin: 10px;
+}
+#recipe img{
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+/*VIDEO PAGE*/
+
+#preview, #recipe{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+  padding: 20px;
+}
+#preview div, #recipe div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 32.5%;
+  border: 1px solid #893101;
+  background-color: #fda172;
+  padding: 5px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+iframe {
+    align: center;
+    margin-bottom: 10px;
+}
+
+/*EXTRA PAGE*/
+
+#social {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+#social img{
+    width: 55px;
+    padding: 15px;
+}
+
+/*MOBILE*/
+
+@media (max-width: 600px) {
+  #uplay {
+  font-size: 2em;
+  padding: 10px 15px;
+  }
+  article {
+  margin: 0 2px;
+  }
+  section {
+  width: 80%;
+  }
+  #preview div, #recive div {
+  width: 49%;
+  }
+  iframe{
+  width: 80%;
+  }
+  #box {
+  height: 10px;
+  width: 10px;
+  font-size: 30px;
+  position: absolute;
+  top: 60px;
+  left:-30px;
+  }
+  a {
+  font-size: .5em;
+  }
+  #recipe p{
+  font-size: .6em;
+ }
+}

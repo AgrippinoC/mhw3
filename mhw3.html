@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+<title>mhw3</title>
+<link rel="icon" type="image/x-icon" href="IMG_mhw3/orange-xxl.ico">
+<link rel="stylesheet" href="mhw3.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
+<script src="mhw3.js" defer="true"></script>
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1"> 
+</head>
+  <body>
+
+    <nav>
+      <a data-choice="home">HOME</a>
+      <a data-choice="food">RICETTE</a>
+      <a data-choice="cont">CONTATTI</a>
+      <a data-choice="video">VIDEO</a>
+    </nav>
+
+    <header>
+      <div id="overlay"></div>
+      <div id="uplay">Agrumi di Sicilia</br></div>
+    </header>
+
+     <p id="logo">
+      <img src="https://sicibia.it/wp-content/uploads/2019/01/mandarini-bio.jpg"/></br>
+    Casaccio Agrippino</br>
+    <em>Azienda Agricola Gagliano</em>
+    </p>
+
+    <article>
+       <section>
+        <div id="box">
+          1.
+        </div>
+        <h1>TAROCCO</h1>
+        <h4><em>Tarocco Gallo</em></h4>
+        L'arancia rossa più famosa, caratteristica della Piana di Catania. Ha una forma generalmente ovolidale, con una buccia di medio spessore, peso medio attorno ai 200g e non presenta semi. Si raccoglie nel periodo invernale (Dic-Apr) ed è destinata alla vendita all'ingrosso e alla produzione di spremute dal caratteristico colore rosso. è una varietà relativamente giovane e dal punto di vista nutrizionale è fortemente consigliata nella dieta mediterranea.
+        <strong>Supergallo</strong>
+        <div class="foto"><img src="IMG_mhw3/tarocco.jpg"/></div>
+	</section>
+      <section>
+        <div id="box">
+          2.
+        </div>
+        <h1>SANGUINELLO</h1>
+        <h4><em>Tarocco Rosso Sanguinello</em></h4>
+        È un tipo di arancia rossa caratterizzata dal colore intenso della polpa. La forma è a metà tra la sferica e l'ovoidale e presenta una buccia arancione spessa e pochi (o anche nulli) semi interni. Si raccoglie nel lungo periodo invernale-inizio primaverile (Gen-Apr) ed è di dimensioni medio-piccola. Nutrizionalmente presenta un gusto dolce e una maggior quantità di Vitamina C rispetto alle altre arance rosse.
+        <strong>Simbolo di tradizione e qualità</strong>
+        <div class="foto"><img src="https://agrumilenzi.it/wp-content/uploads/2016/04/Arancio-Tarocco-Rosso-Citrus-sinensis-scaled.jpg"/></div>
+      </section>
+            <section>
+        <div id="box">
+          3.
+        </div>
+        <h1>WASHINGTON</h1>
+        <h4><em>Washington Navel</em></h4>
+        Sono il secondo tipo di arance più coltivate al mondo, anche se in Sicilia sono pochi i posti in cui sono presenti, tra cui Ribera e la mia proprietà. Presentano una forma sferica e un peso medio di 200g. Caratteristica è la presenza di un "ombelico" di dimensioni variabili nella parte inferiore del frutto. La buccia è liscia e di medio spessore fine, un contenuto di succo molto elevato non troppo acido ed un periodo di raccolta invernale (Dic-Mar). Il colore invece è generalmente arancione, con un intensità variabile a seconda del grado di maturazione.
+        <strong>Equilibrato</strong>
+        <div class="foto"><img src="IMG_mhw3/washington.jpg"/></div>
+      </section>
+      <section>
+        <div id="box">
+          4.
+        </div>
+        <h1>MORO</h1>
+        <h4><em>MORO NL 58-8D-1</em></h4>
+       Caratteristica della Sicilia Sud-Orientale presenta una polpa molto scura, da qui l'origine del nome. La sua buccia è di medio spessore e assenza di semi. Hanno una forma sferica ed un peso attorno ai 150g. Il suo sapore è intenso ma comunque dolce e molto ricca di acqua, quasi l'85%. Hanno un periodo di raccolta molto piccolo (Gen-Feb). Sono inoltre riconosciute dal Consorzio di Tutela dell’Arancia Rossa di Sicilia IGP.
+        <strong>Di fuoco</strong>
+        <div class="foto"><img src="https://i3z4t9a6.rocketcdn.me/wp-content/uploads/2018/06/moro2-1-1024x768.jpg"/></div>
+      </section>
+       <section>
+        <div id="box">
+          5.
+        </div>
+        <h1>NOVELLINO</h1>
+        <h4><em>Novellino Navel</em></h4>
+       Detta anche Navel di Francofonte è una delle cosidette polpe bianche. Il succo che vi si ricava infatti è molto dolce e poco aspro. il frutto presenta una froma ovoidale e la buccia sottile e liscia. è adatta soprattutto per le spremute, grazie all'alto contenuto di succo e vitamina C. Sono tipiche della Piana di Catania e, a differenza di altre varietà, presenta una maturazione relativamente precoce (Nov-Gen).
+        <strong>Delicato</strong>
+        <div class="foto"><img src="IMG_mhw3/novellino.jpg"/></div>
+      </section>
+    </article>
+
+    <form name="search_content" id="food" class = "hidden">
+        <h4>Le nostre arance possono essere usate in varie ricette.</br>
+        Cercala specificandone la tipologia (es pasta ecc...)
+        </h4>
+        <label>Cerca le ricette: 
+            <input type='text' name='content' id='content'></label>	
+	    <input class="submit" type='submit'>
+	<div id='recipe'></div>
+    </form>
+
+    <article id="video" class = "hidden">
+     <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/fQTu3gr13B4?controls=0" title="presentazione" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     </br>Guarda anche altri video...
+    <div id = "preview">	
+    </div>
+    </article>	
+
+    <form name="search_content" id="cont" class = "hidden">
+        <h3>Cercaci su tutti i nostri social</h3>
+        <section id = 'social'>
+		<img data-src="1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/768px-2021_Facebook_icon.svg.png"/>
+		<img data-src="2" src="https://img.freepik.com/free-icon/twitter_318-674515.jpg"/>
+		<img data-src="3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/769px-Instagram-Icon.png"/>
+	</section>
+    </form>
+
+    <footer>Casaccio Agrippino M:1000014638</footer>
+</body>
+
